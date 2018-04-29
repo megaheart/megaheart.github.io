@@ -1,8 +1,84 @@
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+          
     </head>
     <body>
-        <h1>Linh pro</h1>
+        <div id="header">
+            <p>Trò Chơi Của Tổ 3 (^_^)</p>
+        </div>
+        <div id="main">
+            <div class="box" id="play-box">
+                <div id="slide">
+                    <div id="start-box">
+                        <p id="welcome">
+                            <span>W</span>
+                            <span>e</span>
+                            <span>l</span>
+                            <span>c</span>
+                            <span>o</span>
+                            <span>m</span>
+                            <span>e</span>
+                        </p>
+                        <p id="start-title">Let's play! :&#41;</p>
+                        <button id="start-btn" onclick="StartGame()">Bắt Đầu</button>
+                    </div>
+                </div>
+                <div id="control">
+                    <div id="slide-number">
+                        
+                    </div>
+                    <a id="answer-button" class="btnDisabled" onclick="CheckAnswer()">Trả lời</a>
+                    <a id="next-button" class="btnDisabled" onclick="goToNextSlide()">&#10095;</a>
+                </div>
+            </div>
+            <div class="box right-box"  id="score-box">
+                <div class="title-box">
+                    <h3>Tỉ số</h3>
+                </div>
+                <div class="main-box">
+                    <ul id="team-list">
+                        <li>
+                            <span style="background: #ff4c4c;">1</span>
+                            <div class="process">
+                                <div style="background: #ff4c4c;" class="process-completed" id="team1score"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span style="background: #0099e5;">2</span>
+                            <div class="process">
+                                <div class="process-completed"  style="background: #0099e5;" id="team2score"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span style="background: #fbb034">3</span>
+                            <div class="process">
+                                <div class="process-completed" style="background: #fbb034" id="team3score"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span style="background: #34bf49">4</span>
+                            <div class="process">
+                                <div style="background: #34bf49;" class="process-completed" id="team4score"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box right-box">
+                <div class="title-box">
+                    <h3>Bản quyền</h3>
+                </div>
+                <div class="main-box" id="license-box">
+                    <p>&gt;_ Designed by Manh Linh</p>
+                    <p>megaheart&copy; 2018 license</p>
+                    <p>Only used by "Tổ 3"</p>
+                </div>
+            </div>
+        </div>
+        <script src="data.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
